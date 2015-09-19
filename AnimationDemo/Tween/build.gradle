@@ -1,0 +1,51 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.1'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+}
+
+android {
+    compileSdkVersion 23
+//    在Android SDK build-tools中查找，查看是否有
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.ggtf.animationdemo.tween"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+/**
+ * 当前模块依赖的类库设置；
+ */
+dependencies {
+//    加载 libs目录下所有的jar包，注意： libs内部ruguo有子目录那么还需要加一行
+//    类似‘libs/abc’
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    加载网络上的或者是 Android SDK 目录的JAR包
+//    加载AndroidSDK中包含的support包，加载的配置以":"分割，格式如下"groupId:name:version"("包名：类库名：版本号")
+//    加载 android SDK 目录下extras/android/m2repository/目录下的文件
+//    extras/android/m2repository/com/android/support/appcompat-v7/21.0.3/类库
+    compile 'com.android.support:appcompat-v7:23.0.1'
+}

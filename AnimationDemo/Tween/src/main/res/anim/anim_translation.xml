@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!--实现点赞功能-->
+    <!--移动位置-->
+    <!--每一种动画都要设置duration属性，代表这个动画的执行时间-->
+    <!--repeatCount 代表当前动画重复的次数，可以是数字，也可以是infinite（无限重复）-->
+    <!--repeatMode 代表动画重复的模式，一去一回，算一次；restart（从新开始执行）reverse（动画反过来执行一遍，形成一次重复）-->
+    <!--
+            android:repeatCount="2"
+            android:repeatMode="reverse"
+    -->
+    <translate
+            android:duration="2000"
+            android:fromYDelta="0"
+            android:toYDelta="-100"
+            android:fillAfter="true"
+            />
+    <!--在移动位置的同时 +1 要越来越淡，使用alpha-->
+    <!--fromAlpha 从某个透明度 toAlpha到某一个透明度（0~1的浮点数）-->
+    <!--每一个动画效果，都有一个startOffset属性，来控制当前效果的启动时间-->
+    <alpha android:duration="500"
+           android:fromAlpha="1"
+           android:toAlpha="0"
+           android:startOffset="2000"
+           android:fillAfter="true"
+            />
+
+</set>
