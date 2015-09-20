@@ -5,14 +5,14 @@
                     android:propertyName="translationY"
                     android:valueType="floatType"
                     android:valueFrom="0"
-                    android:valueTo="-90"
+                    android:valueTo="-120"
             />
     <!--cos18 = 0.95-->
     <objectAnimator android:duration="1500"
                     android:propertyName="translationX"
                     android:valueType="floatType"
                     android:valueFrom="0"
-                    android:valueTo="-285"
+                    android:valueTo="-380"
             />
 
 </set>

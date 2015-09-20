@@ -21,9 +21,8 @@
                     />
     <objectAnimator android:duration="1000"
                     android:propertyName="alpha"
-                    android:valueType="intType"
+                    android:valueType="floatType"
                     android:valueFrom="1"
                     android:valueTo="0"
-                    android:startOffset="1000"
             />
 </set>
