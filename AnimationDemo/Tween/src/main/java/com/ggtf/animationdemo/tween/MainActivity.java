@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
 import android.widget.TextView;
 
 
@@ -59,6 +60,8 @@ public class MainActivity extends Activity implements Animation.AnimationListene
 
     public void btnFan(View view) {
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_rotate);
+//        设置动画的平滑播放
+        animation.setInterpolator(new LinearInterpolator());
         fan.startAnimation(animation);
     }
 

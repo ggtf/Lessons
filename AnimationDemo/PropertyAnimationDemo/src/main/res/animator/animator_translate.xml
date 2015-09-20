@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!--属性动画的资源文件-->
+<!--1.属性动画，可以用于修改某一个对象的属性-->
+    <!--
+    设置步骤：
+    1.设置时间
+    2.设置属性名称
+    3.设置属性值的类型
+    4.设置属性值
+    -->
+    <!--propertyName 指定对象的属性，对象可以通过setXXX()来设置的属性，都可以-->
+    <objectAnimator android:duration="3000"
+                    android:propertyName="textColor"
+                    android:valueType="intType"
+                    android:valueFrom="#00ff00"
+                    android:valueTo="#ff0000"
+            />
+</set>

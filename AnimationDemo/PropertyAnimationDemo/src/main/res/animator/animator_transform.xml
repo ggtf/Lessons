@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--修改属性： left-->
+    <objectAnimator
+            android:duration="500"
+            android:propertyName="left"
+            android:valueType="intType"
+            android:valueFrom="50"
+            android:repeatMode="reverse"
+            android:repeatCount="infinite"
+            android:valueTo="200"
+            />
+    <!--修改属性： right-->
+    <objectAnimator
+            android:duration="500"
+            android:propertyName="right"
+            android:valueType="intType"
+            android:valueFrom="100"
+            android:repeatMode="reverse"
+            android:repeatCount="infinite"
+            android:valueTo="500"
+            />
+
+</set>

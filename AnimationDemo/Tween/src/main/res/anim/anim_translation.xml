@@ -4,7 +4,7 @@
     <!--移动位置-->
     <!--每一种动画都要设置duration属性，代表这个动画的执行时间-->
     <!--repeatCount 代表当前动画重复的次数，可以是数字，也可以是infinite（无限重复）-->
-    <!--repeatMode 代表动画重复的模式，一去一回，算一次；restart（从新开始执行）reverse（动画反过来执行一遍，形成一次重复）-->
+    <!--repeatMode 代表动画重复的模式，一去一回，各算一次；restart（从新开始执行）reverse（动画反过来执行一遍，形成一次重复）-->
     <!--
             android:repeatCount="2"
             android:repeatMode="reverse"

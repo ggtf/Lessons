@@ -1,1 +1,1 @@
-include ':Tween'
+include ':Tween', ':PropertyAnimationDemo'
