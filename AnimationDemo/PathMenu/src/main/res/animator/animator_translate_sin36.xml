@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<!--sin36 = 0.59-->
+    <objectAnimator android:duration="1500"
+                    android:propertyName="translationY"
+                    android:valueType="floatType"
+                    android:valueFrom="0"
+                    android:valueTo="-177"
+            />
+    <!--cos36 = 0.8-->
+    <objectAnimator android:duration="1500"
+                    android:propertyName="translationX"
+                    android:valueType="floatType"
+                    android:valueFrom="0"
+                    android:valueTo="-240"
+            />
+
+</set>
